@@ -51,3 +51,13 @@ git commit -m "Initial commit"
 git branch -M main
 git remote add origin <원격 저장소 URL>
 git push -u origin main
+
+
+git clone https://github.com/사용자명/저장소명.git
+cd 저장소명
+python -m venv venv
+.\venv\Scripts\activate
+pip install -r requirements.txt  # 또는 위 명령어들 직접 입력
+uvicorn nsbs_platform:app --host 0.0.0.0 --port 8000
+# 새 터미널에서
+streamlit run nsbs_platform.py ui
