@@ -1,0 +1,8 @@
+fastapi
+uvicorn[standard]
+geopy
+streamlit
+streamlit-javascript
+pandas
+pydeck
+requests
